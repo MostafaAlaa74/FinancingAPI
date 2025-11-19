@@ -33,7 +33,7 @@ class TasksController extends Controller
             'description' => $request->description,
             'due_date' => $request->due_date,
             'status' => $request->status,
-            'periority' => $request->periority,
+            'priority' => $request->priority,
             'user_id' => Auth::id()
         ]);
         return response()->json($task, 201);

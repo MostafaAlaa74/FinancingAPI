@@ -23,8 +23,6 @@ class LoginController extends Controller
         $user = User::where('email', $request->email)->firstorfail();
         $token = $user->createToken('auth_token')->plainTextToken;
 
-        Mail::to($user->email)->send(new WelcomMail($user));
-
         return response()->json([
             'messege' => 'Welcome Back To The Website',
             'User' => $user,
