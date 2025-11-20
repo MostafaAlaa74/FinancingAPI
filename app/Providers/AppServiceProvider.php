@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        //? Prevent Lazy Loading (N+1 Problem)
         Model::preventLazyLoading();
     }
 }
-
