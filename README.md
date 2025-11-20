@@ -4,7 +4,7 @@
 
 # Financing & Task Management API
 
-An API-first Laravel 11 application that lets authenticated users track personal expenses and manage tasks in one place. It exposes REST endpoints secured with Sanctum tokens, applies per-user authorization policies, and sends onboarding emails via queued jobs.
+An API-first Laravel 12 application that lets authenticated users track personal expenses and manage tasks in one place. It exposes REST endpoints secured with Sanctum tokens, applies per-user authorization policies, and sends onboarding emails via queued jobs.
 
 ## Features
 
